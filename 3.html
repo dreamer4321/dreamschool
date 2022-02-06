@@ -1,26 +1,68 @@
 <!doctype html>
 <html>
 <head>
-<title>꿈의 학교</title>
-<meta charset="utf-8">
+    <title>꿈의 학교</title>
+    <meta charset="utf-8">
+    <style>
+        #grid{
+            display:grid;
+            grid-template-columns:200px 1fr;
+        }
+        a{color:rgb(1, 139, 98);
+        text-decoration:none;
+        }
+
+        h1{border-bottom:grey 3px solid;
+            padding : 20px;
+            margin: 0;
+            text-align:center;
+        }
+
+        ol{border-right:grey 2px solid;
+            width:150px;
+            margin:0;
+            padding-top:30px;
+        }
+
+        #article{
+            padding-left:20px;
+        }
+
+        @media(max-width:700px){
+        #grid{
+            display: block;
+        }
+        ol{
+            border-right:none;
+            border-bottom:grey 2px solid;
+        }
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">학생이 만들어 가는 꿈의 학교 (만꿈)</a></h1>
-    <ol>
-        <li><a href="1.html">꿈의 학교 이름</a></li>
-        <li><a href="2.html">꿈짱</a></li>
-        <li><a href="3.html">꿈지기</a></li>
-        <li><a href="4.html">꿈의 학교 소개</a></li>
-    </ol>
+    
+    <div id="grid">
 
-    <h2><a href="https://village.goe.go.kr/" target="_blank" title="꿈의 학교 홈페이지">꿈의 학교 홈페이지</a> </h1>
-    <h3>꿈지기 소개</h3>
-    <p>반갑습니다. 꿈지기 이고은입니다^^ 
-    </p>
-    <img src="teacher.jpg"width="500">
+        <ol>
+            <li><a href="1.html">꿈의 학교 이름</a></li>
+            <li><a href="2.html">꿈짱</a></li>
+            <li><a href="3.html">꿈지기</a></li>
+            <li><a href="4.html">꿈의 학교 소개</a></li>
+        </ol>
 
-    </img>
+        <div id="article">
+
+            <h2>꿈지기 소개</h2>
+            <h2></h2>
+            <p>반갑습니다. 꿈지기 이고은입니다^^ 
+            </p>
+            <img src="teacher.jpg"width="500">
+
+            </img>
+        </div>
+    </div>
 
 </body>
 
